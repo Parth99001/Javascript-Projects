@@ -8,49 +8,77 @@
 <style>
     body{
         text-align: center;
-        color: rgb(255, 0, 0);
-        background-color: aqua;
-    }
-    div{
         background-color: black;
         color: white;
-        height: 170px;
+       
+    }
+    div{
+        height: 300px;
         width: 200px;
         justify-content: center;
         margin: auto;
         margin-top: 50px;
         padding: 20px;
         border-radius: 10px;
+        background-color: rgb(124, 119, 119);
     }
+  
 </style>
 <body>
-    <h1>Form From JS:</h1>
+    <h1 style="color: red;">Form From JS:</h1>
     <div>
-        <form action="" onsubmit="return check()">
+        <form action="">
             <label for="">Name:</label>
-            <input type="text" name="" id="one"><br>
+            <input onblur="check()" type="text" name="" id="one"><br>
+            <span id="error" ></span><br>
+            <label for="">Number:</label>
+            <input onblur="check()" type="Number" name="" id="digit"><br>
+            <span id="num" ></span><br>
             <label for="">Email:</label>
-            <input type="email" name="" id="two"><br>
+            <input onblur="check()" type="email" name="" id="two"><br>
+            <span id="err"></span><br>
             <label for="">Password:</label>
-            <input type="text" name="" id="three"><br> <br>
-            <input onsubmit="check()" value="submit" type="submit" name="" id="">
+            <input onblur="check()" type="text" name="" id="three"><br>
+            <span id="erro"></span><br>
+            <input onclick="check()" value="submit" type="submit" name="" id="">
         </form>
     </div>
     <script>
         function check() {
             let a = document.getElementById("one");
+            let x=document.getElementById("digit")
             let b = document.getElementById("two");
             let c = document.getElementById("three");
+            let error= document.getElementById("error")
+            let numbs=document.getElementById("num")
+            let sec= document.getElementById("err")
+            let third= document.getElementById("erro")
             if (a.value == "") {
-                alert("Enter Name Properly")
-            } else if (b.value == "") {
-                alert("Enter Email Properly")
-            }else if(c.value ==""){
-                alert("Enter Your PassWord")
-                return false;
-            }else{
-                return true;
+                error.innerText="Enter Your Name";
+                error.style.color="red";
+                error.style.display='block';
+            }else {
+                error.style.display='none';
+            } if (x.value == "") {
+                numbs.innerText="Enter Your NUMBER";
+                numbs.style.color="red";
+                numbs.style.display='block';
+            }else {
+                numbs.style.display='none';
+            } if (b.value == "") {
+                sec.innerText="Enter Your Email";
+                sec.style.color="red";
+                sec.style.display='block';
+            }else {
+                sec.style.display='none';
+            }if (c.value == "") {
+                third.innerText="Enter Your Password";
+                third.style.color="red";
+                third.style.display='block';
+            }else {
+                third.style.display='none';
             }
+            
         }
     </script>
 </body>
