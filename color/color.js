@@ -21,8 +21,8 @@ function past() {
 
 function further() {
     currentslide++;
-    if (currentslide>= slides.length) {
-        currentdiv=0;
+    if (currentslide >= slides.length) {
+        currentslide=0;
     }
     hid();
     slides[currentslide].style.display="flex";
