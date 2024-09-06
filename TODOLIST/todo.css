@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(0, 73, 83);
+    color: white;
+  }
+  .main{
+    padding: 40px;
+  }
+  .todolist{
+    height: auto;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+  }
+  .one{
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    background-color: grey;
+    padding: 10px;
+   }
+   input{
+    width: 89%;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+   }
+   button{
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+    border-radius: 30px;
+   }
+   ul li{
+    position: relative;
+    top: 5px;
+
+   }
+   ul li span{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer; 
+    border-radius: 30%;
+   }
+   ul li span:hover{
+    background: red;
+   }
