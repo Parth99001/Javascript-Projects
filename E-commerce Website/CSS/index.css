@@ -1,0 +1,56 @@
+/* @media (min-width: 220px) { 
+    
+
+ }
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) { 
+    #loc{
+        height: 400px;
+        width: 1000px;
+    }
+ }
+
+
+@media (min-width: 992px) {
+    #loc{
+        height: 400px;
+        width: 1000px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #loc{
+        height: 90%;
+        width: 90%;
+    }
+ }
+
+
+@media (min-width: 1400px) { 
+
+} */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#main
+{
+    padding: 0;
+    position:relative ;
+}
+#text{
+    position:absolute ;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    color: white;
+    text-align: center;
+}
