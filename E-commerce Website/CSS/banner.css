@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+#ban{
+    height: 380px;
+    width: 100%;
+    background-image: url(../Img/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
